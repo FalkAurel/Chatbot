@@ -87,6 +87,6 @@ INSERT INTO preprompt_history (user_id, prompts)
 VALUES ($1, $2)
 `
 
-func AddToPrePromptHistory(db *sql.DB, id int64, pre_prompt string) error {
-	_, err := db.Exec(createPrePromptHistory, id, nil)
-}
+// func AddToPrePromptHistory(db *sql.DB, id int64, pre_prompt string) error {
+// 	_, err := db.Exec(createPrePromptHistory, id, nil)
+// }

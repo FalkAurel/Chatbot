@@ -22,7 +22,8 @@ COPY Cargo.toml Cargo.lock ./
 
 # 4. Copy source code
 COPY src ./src
-COPY data/embedding_cache ./data/embedding_cache
+RUN mkdir -p data/embedding_cache/
+#COPY data/embedding_cache ./data/embedding_cache
 
 # 5. Build application
 RUN cargo build #--release
